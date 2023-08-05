@@ -1,0 +1,53 @@
+
+
+.navBar {
+    width: 100%;
+    height: 50px;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .text_and_logo_container {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text_and_logo_container img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .academlo_heading_text {}
+  
+  .logo_img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .shopping_cart_container {}
+  
+  .cart_icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .cart_icon:hover {
+    width: 32px;
+    height: 30px;
+    transition: 0.5s;
+  }
+  

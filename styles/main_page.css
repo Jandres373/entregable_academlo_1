@@ -1,0 +1,190 @@
+.visuals_section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb4a5a;
+  }
+  
+  .visuals_section img {
+    width: 150px;
+    height: 150px;
+    background-blend-mode: color-dodge;
+  }
+  
+  .producs_section {
+    margin: 0 30px;
+    display: grid;
+  }
+  
+  .product_section_heading_text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .productSelect {
+    width: 200px;
+    border: 1px solid rgba(128, 128, 128, 0.16);
+    background-color: #fff;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-height: 100px;
+  }
+  .productSelect::selection {
+    max-height: 100px;
+  }
+  .products_display_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    max-height: 840px;
+    overflow-y: hidden;
+  }
+  .maximizedBanner {
+    max-height: 1680px;
+  }
+  .product_container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.174);
+    border-radius: 8px;
+    overflow: hidden; /* Para asegurarse de que el contenido no se desborde */
+  }
+  .product_container:hover {
+    cursor: pointer; /* Para asegurarse de que el contenido no se desborde */
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.174);
+    
+    }
+  .product_container::before {
+    content: 'Select';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Color de la máscara negra */
+    opacity: 0; /* Comenzar con opacidad cero */
+    pointer-events: none; /* Evitar interacción con el pseudo-elemento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Color del texto */
+    font-size: 35px; /* Tamaño del texto */
+    transition: opacity 0.3s ease; /* Transición suave de la opacidad */
+  }
+  
+  .product_container:hover::before {
+    opacity: 1; /* Mostrar la máscara negra al hacer hover */
+  }
+  
+  .product_img {
+    width: clamp(100px, 200px,250px);
+    min-height: 300px;
+  }
+  
+  .product_text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 10px;
+    max-width: 120px;
+  }
+  
+  .variants {
+    margin: 0 10px;
+  }
+
+  
+  .price {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 10px;
+  }
+
+  .expand_site_height_btn {
+    display: grid;
+    place-items: center;
+  }
+  
+.expand_site_height_btn button {
+    width: 200px;
+    height: 40px;
+    background-color: #fff;
+    border-color: #6d788e;
+    color: #6d788e;
+    font-weight: 900;
+    font-size: 16px;
+    margin: 50px;
+    cursor: pointer;
+    justify-self: center;
+  }
+  
+.expand_site_height_btn button:hover {
+    background-color: #eb4a5a;
+    color: #f6f6f6;
+  }
+  
+@media screen and (max-width: 575px) {
+    .producs_section {
+      margin: 0 10px;
+    }
+    .product_container {
+        display: grid;
+        place-items: center;
+      }
+    .product_img {
+        width: 50%;
+        min-height: 300px;
+      }
+  
+    .products_display_container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .producs_section {
+      margin: 0 50px; 
+    }
+  
+    .products_display_container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+ 
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .producs_section {
+      margin: 0 50px; 
+    }
+  
+    .products_display_container {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+  
+
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .producs_section {
+      margin: 0 100px; 
+    }
+  
+    .products_display_container {
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .producs_section {
+      margin: 0 100px; 
+    }
+  
+    .products_display_container {
+      grid-template-columns: repeat(5, 1fr); 
+    }
+  }
+  

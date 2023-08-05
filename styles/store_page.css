@@ -1,0 +1,254 @@
+
+:root {
+    --font-family: 'Inter', 'Helvetica Neue', Helvetica, sans-serif;
+    --primary-color: #274672;
+    --secondary-color: #eb4a5a;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+    --margin-small: 10px;
+    --margin-medium: 20px;
+    --margin-large: 30px;
+}
+
+.producs_section {
+    margin: 0 6.25rem;
+    font-family: var(--font-family);
+}
+
+.products-section__heading-text {
+    font-family: var(--font-family);
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.products-section__heading-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.products-section__back-arrow {
+    cursor: pointer;
+}
+
+.products-section__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-section__product-insights {
+    min-height: 500px;
+    position: relative;
+}
+
+  .store_heading_text {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 25px;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+  
+  .store_heading_container {
+      display: flex;
+      align-items: center;
+      gap: 25px   ;
+  }
+  #back_arrow {
+    cursor: pointer;
+  }
+.produc_section_container {
+    display: flex;
+    justify-content: space-between;
+}
+.store_product_insights{
+    min-height: 500px;
+    position: relative;
+}
+.store_product_text {
+    margin: 25px 0;
+}
+.store_product_description {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+
+.store_product_text{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.store_img_variant_container{
+    width: 150px;
+    height: 160px;
+    border: 2px solid rgba(128, 128, 128, 0.296);
+}
+
+.store_sizes_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.store_product_guide_text {
+    color: gray;
+    font-weight: 100;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.store_product_varintas_container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.variants {
+    width: 60px;
+    height: 40px;
+    border: 2px solid rgba(128, 128, 128, 0.296);
+    display: grid;
+    place-items: center;
+}
+
+.store_button {
+    position: absolute;
+    bottom: 70px;
+    left: 150px;
+    width: 200px;
+    height: 40px;
+    background-color: #fff;
+    border-color: #6d788e;
+    color: #6d788e;
+    font-weight: 900;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.product_section_display {
+    min-width: 500px;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.colored_frame {
+    width: 300px;
+    height: 100%;
+    background-color: #eb4a5a;
+}
+
+.store_img_product_maximized{
+    position: absolute;
+    top: 200px;
+    left: 70px;
+}
+
+.store_related_products {
+    width: 100%;
+    height: 260px;
+    margin-top: 100px;
+    
+}
+.store_related_products h2 {
+    font-size: 25px;
+}
+.store_products_display_container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    object-fit: contain;
+    gap: 20px;
+    max-height: 260px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+}
+
+.store_product_container {
+    position: relative;
+    max-width: fit-content;
+    height: 250px;
+    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.174);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.store_product_container:hover {
+    cursor: pointer;
+}
+
+.store_product_img {
+    margin-top: 25px;
+    width: clamp(50px, 150px,200px);
+    min-height: 150px;
+  }
+  
+.store_product_text_related {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin: 10px 0;
+max-width: 120px;
+}
+
+.store_variants {
+margin: 0 10px;
+}
+
+
+.store_price {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin: 0 10px;
+}
+
+.store_suscription_container {
+    display: grid;
+    place-items: center;
+    margin: 50px;
+}
+
+.suscribe_section_heading {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.suscribe_section_text {
+    font-size: 15px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.susbribe_button {
+    width: 200px;
+    height: 42px;
+    background-color: #274672;
+    border: none;
+    color: white;
+    font-weight: 900;
+    font-size: 16px;
+    cursor: pointer;
+    justify-self: center;
+}
+.suscribe_input {
+    width: 400px;
+    height: 40px;
+    background-color: #e0e0e1;
+    border: none;
+    color: #6d788e;
+    font-weight: 900;
+    font-size: 16px;
+    outline: none;
+    padding-left: 25px;
+}
+
+.suscribe_input::placeholder {
+    color: #676769;
+    
+}
+

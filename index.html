@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academlo shopping site</title>
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/main_page.css">
+    <link rel="stylesheet" href="/styles/store_page.css">
+    <link rel="stylesheet" href="/styles/cart.css">
+</head>
+<body>
+    <nav class="navBar">
+        <div class="text_and_logo_container">
+            <img src="/public/Captura de pantalla 2023-08-03 223542.png" alt="" class="logo_img"  >
+            <h1 class="academlo_heading_text">Academlo</h1>
+        </div>
+        <div class="shopping_cart_container">
+            <img id="nav_cart_button" src="/public/icons8-cart-50.png" alt="" class="cart_icon">
+        </div>
+    </nav>
+    <div id="spa_container"> <!-- aquí se inyecta el codigo HTML desde JS para desplegar los componentes y mantener el navBar de forma transversal en todos --></div>
+    <script src="/js/cart.js"></script>
+    <script src="/js/storeSection.js"></script>
+    <script src="/js/mainSection.js"></script>
+    <script  src="/js/main.js"></script>
+    </body>
+</html>
